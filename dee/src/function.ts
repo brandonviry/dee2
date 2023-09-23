@@ -2,7 +2,7 @@
 let RANDOM = (min?: number, max?: number) => {
     max = max === undefined ? 100 : max;
     min = min === undefined ? 1 : min;
-  
+    max+= 1
     return Math.floor(Math.random() * (max - min)) + min;
   };
   

@@ -2,14 +2,14 @@ import { RANDOM  } from "./function"
 
 let hide_face =(face:number[])=>{
   face.forEach((elt)=>{
-    document.querySelector("#case"+elt.toString()+"> p")!.style.visibility = "hidden";
+    (document.querySelector("#case"+elt.toString()+"> p")! as HTMLParagraphElement).style.visibility = "hidden";
    
   })
 
 }
 let show_face =(face:number[])=>{
   face.forEach((elt)=>{
-    document.querySelector("#case"+elt.toString()+"> p")!.style.visibility = "visible";
+    (document.querySelector("#case"+elt.toString()+"> p")! as HTMLParagraphElement).style.visibility ="visible";
    
   })
 
@@ -38,23 +38,15 @@ let mj_dee = (nombre: number): void => {
       hide_face([2,4,6,8])
       break;
     case 6:
-      hide_face([0])
+      hide_face([2,5,8])
       break;
 
     default:
-      
-    let zone= [1,2,3,4,5,6,7,8,9]
-      
-      zone.forEach((elt)=>{
-        if(elt%2===0){
-          document.querySelector("#case"+elt.toString())!.style.backgroundColor = "orange";
-        }
-        else{
-          document.querySelector("#case"+elt.toString())!.style.backgroundColor = "red";
-        }
-       
-      })
-      hide_face(zone)
+
+     hide_face([1,2,3,4,6,7,8,9]);
+    (document.querySelector("#case5 > p")! as HTMLParagraphElement).textContent ="ERREUR"
+    
+    
 
 
       break;
@@ -67,6 +59,8 @@ let mj_dee = (nombre: number): void => {
 
 
 let main =()=>{
+
+  
 
 
   mj_dee(RANDOM(1,6))
