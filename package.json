@@ -1,0 +1,7 @@
+{
+  "main": "./main/index.html",
+
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
