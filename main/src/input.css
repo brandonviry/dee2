@@ -40,3 +40,33 @@
     width: 75%;
     height: 75%;
 }
+
+.bg-img{
+    background-image: url("https://cdn.pixabay.com/photo/2017/05/28/17/03/dice-2351448_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#btn-lancer:hover{
+    font-weight: bold;
+
+    
+    
+
+   
+    
+
+}
+
+#btn-lancer:active> li{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+
+    padding-left: 3em;
+    padding-right: 3em;
+
+    border-radius: 1.5em;
+    
+    
+}
+
